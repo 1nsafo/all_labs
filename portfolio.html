@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Добавим немного стилей для анимации кнопки */
+        .styled-button {
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .styled-button:hover {
+            background-color: #140dcc; /* Изменение цвета при наведении */
+            transform: scale(1.1); /* Увеличение кнопки при наведении */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="black-text">Петрушин Евгений Игоревич</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#projects">GitHub</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+        <div class="about">
+            <img class="photo" src="cat.jpg" alt="img">
+            <div class="info">
+                <p class="univer">Университет: Московский технический университет связи и информатики "МТУСИ"</p>
+                <p class="major">Направление: Фундаментальная информатика и информационные технологии</p>
+                <p class="faculty">Факультет: Информационные Технологии</p>
+                <div>
+                    <div class="fonbak">
+                        <div class="bak">
+                            <ul>
+                                <h3>Backend</h3>
+                                <li>
+                                    <p class="go">Go</p>
+                                </li>
+                                <li>
+                                    <p class="python">Python</p>
+                                </li>
+                                <li>
+                                    <p class="cs">C#</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="styled-button" id="toggleInfo">Важная информация</button>
+                <div id="extraInfo" style="display: none;">
+                    <p>В разработке</p>
+                </div>
+            </div>
+        </div>
+    <hr>
+    <style>
+        hr {
+            width: 100%; 
+            border: none;
+            height: 2px; 
+            background-color: black; 
+        }
+    </style>
+    <section>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="cch.jpeg" alt="Проект 1"></div>
+                <div class="slide"><img src="go.jpeg" alt="Проект 2"></div>
+                <div class="slide"><img src="python.jpg" alt="Проект 3"></div>
+            </div>
+            <div class="buttons">
+                <button class="button" id="prev">Назад</button>
+                <button class="button" id="next">Вперед</button>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <div class="under">
+        <section id="projects">
+            <h2>GitHub</h2>
+            <a href="https://github.com/1nsafo" target="_blank">https://github.com/1nsafo</a>
+            <div>
+                    <div id="repos"></div>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Вы можете связаться со мной в tg: <a href="@Insafoo">@Insafoo</a></p>
+        </section>
+
+        <section>
+            <button class="styled-button" type="button" id="interestingButton">Что-то интересное</button>
+            <button class="styled-button" type="button" id="revertButton">Вернуть изначальный цвет</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Мое Портфолио</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
